@@ -17,8 +17,8 @@ class Migration(migrations.Migration):
                 ('nome', models.CharField(max_length=40)),
                 ('telefone', models.CharField(max_length=11)),
                 ('servico', models.CharField(max_length=50)),
-                ('data', models.CharField(max_length=8)),
-                ('hora', models.CharField(max_length=5)),
+                ('data', models.CharField(max_length=20)),
+                ('hora', models.CharField(max_length=20)),
             ],
         ),
     ]

@@ -14,7 +14,10 @@ class Agendamento(models.Model):
     nome = models.CharField(max_length=40)
     telefone = models.CharField(max_length=11)
     servico = models.CharField(max_length=50)
-    data = models.CharField(max_length=8)
-    hora = models.CharField(max_length=5)
+    data = models.CharField(max_length=20)#DateField('data', null=True, blank=True)
+    hora = models.CharField(max_length=20)
 
-      
+class Usuario(models.Model):
+    user_id = models.AutoField(primary_key=True)
+    nome = models.CharField(max_length=40)
+    senha = models.CharField(max_length=20)
